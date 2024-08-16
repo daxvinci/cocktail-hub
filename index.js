@@ -11,8 +11,8 @@ const port = process.env.PORT || 3001
 const letters = [];
 generateAlphabet()
 
-app.set('view engine', 'ejs');
-app.use(express.static('public/styles'))
+// app.set('view engine', 'ejs');
+app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/', async(req,res) => {
@@ -128,3 +128,5 @@ app.listen(port, () => {
         letters.push(String.fromCharCode(i));
     }
 }
+
+// module.exports = app;
