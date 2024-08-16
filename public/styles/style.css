@@ -30,10 +30,10 @@
     overflow-wrap: break-word;
     flex-wrap: wrap;
 }
-.grid-height{
-    height: 300px;
-    width: 200px;
-}
+/* .grid-height{
+    height: 400px !important;
+    width: 300px !important;
+} */
 .image-fit{
     background-size: cover;
 }
